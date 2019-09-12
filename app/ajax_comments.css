@@ -1,0 +1,104 @@
+/*!
+ * ajax_comments.css module of m.css v1.1
+ * https://m-framework.com/css/modal
+ *
+ * Copyright 2017 m-framework.com
+ * Released under the MIT license
+ * https://m-framework.com/css/license
+ *
+ * Author: mrinmiro@gmail.com
+ *
+ * Date: 2017-10-17T23:38Z
+ */
+.comments {
+    display: block;
+    float: none;
+    clear: both;
+    margin: 21px -20px -20px -20px;
+}
+.comments .comments_area {
+    padding: 0;
+    margin: 30px 0 0 0;
+}
+.comments .comments_area .comment {
+    display: block;
+    width: 100%;
+    padding: 5px 0 0 0;
+    border-top: solid 1px #ebebeb;
+    position: relative;
+    margin-top: 5px;
+}
+.comments .comments_area .comment > div {
+    float: none;
+    clear: both;
+    display: table-cell;
+    vertical-align: top;
+    width: 100%;
+    -ms-word-break: break-all;
+    word-break: break-all;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
+}
+.comments .comments_area .comment > div:nth-child(1) {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.comments .comments_area .comment > div:nth-child(1) img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0;
+}
+.comments .comments_area .comment > div:nth-child(2) {
+    padding: 0 0 0 10px;
+}
+.comments .comments_area .comment .name
+{
+    display: block;
+    font-weight: 800;
+    color: #43647D;
+}
+.comments .comments_area .comment .date {
+    color: #999;
+    font-size: 11px;
+    position: absolute;
+    top: 8px;
+    right: 110px;
+    font-style: normal;
+}
+.comments .comments_area .comment a.repl,
+.comments .comments_area .comment a.del
+{
+    position: absolute;
+    right: 80px;
+    font-size: 12px;
+    padding: 3px 6px;
+    background-color: #F3F3F3;
+    border-radius: 3px;
+    text-decoration: none;
+    color: #999;
+    top: 3px;
+    z-index: 2;
+}
+.comments .comments_area .comment a.repl:hover,
+.comments .comments_area .comment a.del:hover
+{
+    background-color: #B1D9F3;
+    color: #2971B0;
+}
+.comments .comments_area .comment a.repl {
+    right: 0;
+}
+.comments .comments_area .comment a.del:before {
+    content: "\f014";
+    font-family: "FontAwesome";
+}
+.comments .comments_area .comment img {
+    max-width: 400px;
+    height: auto;
+    float: none;
+    clear: both;
+    display: block;
+}

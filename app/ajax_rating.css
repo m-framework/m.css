@@ -1,0 +1,134 @@
+/*!
+ * ajax_ratings.css module of m.css v1.1
+ * https://m-framework.com/css/modal
+ *
+ * Copyright 2017 m-framework.com
+ * Released under the MIT license
+ * https://m-framework.com/css/license
+ *
+ * Author: mrinmiro@gmail.com
+ *
+ * Date: 2017-10-17T23:38Z
+ */
+h1 .rating-field {
+    float: right;
+    margin: 20px 0 0 0;
+}
+
+.rating-field {
+    display: inline-block;
+    margin: 0 0 0 0;
+    font-size: 11px;
+    color: #666;
+    position: relative;
+    min-height: 20px;
+}
+.rating-field > span {
+    display: inline-block;
+}
+.rating-field .total
+{
+    display: inline-block;
+    cursor: pointer;
+    line-height: 22px;
+    vertical-align: bottom;
+    margin: -5px 0 0 0;
+    height: 12px;
+}
+.rating-field .plus,
+.rating-field .minus
+{
+    padding: 7px 10px 2px 28px;
+    font-size: 12px;
+    line-height: 12px;
+    position: relative;
+    margin: -5px 5px 0px 0px;
+    vertical-align: bottom;
+    display: inline-block;
+    cursor: pointer;
+    height: 12px;
+}
+.rating-field .plus:before,
+.rating-field .minus:before
+{
+    content: "";
+    font-family: "FontAwesome";
+    font-size: 22px;
+    height: 22px;
+    width: 22px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    line-height: 22px;
+    color: #666;
+}
+.rating-field .minus:before {
+    content: "\f088";
+    top: 1px;
+}
+.rating-field .minus:hover:before {
+    color: #E00000;
+}
+.rating-field .minus {
+    color: #E00000;
+}
+.rating-field .plus:before {
+    content: "\f087";
+}
+.rating-field .plus:hover:before {
+    color: #00A200;
+}
+.rating-field .plus {
+    color: #00A200;
+}
+.modal-votes {
+    max-height: 400px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.vote-line {
+    display: block;
+    padding: 5px 20px;
+    border-bottom: solid 1px #ddd;
+    float: none;
+    clear: both;
+}
+.vote-line .ava_name {
+    display: inline-block;
+    width: 260px;
+}
+.vote-line .vote {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    line-height: 32px;
+    vertical-align: middle;
+    font-size: 30px;
+    font-family: "FontAwesome";
+    font-style: normal;
+    margin-right: 20px;
+}
+.vote-line .vote.minus:before {
+    content: "\f088";
+    color: #E00000;
+}
+.vote-line .vote.plus:before {
+    content: "\f087";
+    color: #00A200;
+}
+.vote-line img {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    float: none;
+    clear: both;
+    margin-right: 10px;
+    border-radius: 50%;
+    vertical-align: middle
+}
+.vote-line .date {
+    color: #999;
+    font-size: 11px;
+}

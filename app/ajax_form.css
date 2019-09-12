@@ -1,0 +1,43 @@
+form[data-m-action="ajax_form"].loading {
+    position: relative;
+}
+form[data-m-action="ajax_form"]:before {
+    content: '';
+    position: absolute;
+    background-color: #fff;
+    opacity: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    -moz-transition: all .25s ease-in-out;
+    -webkit-transition: all .25s ease-in-out;
+    -o-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
+}
+form[data-m-action="ajax_form"].loading:before {
+    background-color: #fff;
+    z-index: 1;
+    opacity: 0.6;
+    cursor: wait;
+}
+form[data-m-action="ajax_form"] input[type="text"].error,
+form[data-m-action="ajax_form"] input[type="email"].error,
+form[data-m-action="ajax_form"] input[type="password"].error,
+form[data-m-action="ajax_form"] input[type="number"].error,
+form[data-m-action="ajax_form"] input[type="file"].error,
+form[data-m-action="ajax_form"] textarea.error,
+form[data-m-action="ajax_form"] select.error
+{
+    border: solid 1px #b70000;
+}
+form[data-m-action="ajax_form"] > div.error {
+    text-align: left;
+}
+form[data-m-action="ajax_form"] > div.error a,
+form[data-m-action="ajax_form"] > div.notice a,
+form[data-m-action="ajax_form"] > div.success a
+{
+    text-decoration: underline;
+}

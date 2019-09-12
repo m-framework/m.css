@@ -1,0 +1,231 @@
+/*!
+ * file_manager.css module of m.css v1.1
+ * https://m-framework.com/css/modal
+ *
+ * Copyright 2017 m-framework.com
+ * Released under the MIT license
+ * https://m-framework.com/css/license
+ *
+ * Author: mrinmiro@gmail.com
+ *
+ * Date: 2017-10-17T23:39Z
+ */
+ul.data-list {
+    display: block;
+    min-height: 100px;
+    border: solid 1px #eee;
+    margin: -1px 0 0 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 5px;
+    list-style: none;
+    max-height: 400px;
+    position: relative;
+}
+ul.data-list li {
+    list-style: none;
+    display: inline-block;
+    min-width: 110px;
+    max-width: 25%;
+    height: 130px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 0 1px #fff inset;
+    line-height: 100px;
+    position: relative;
+    vertical-align: middle;
+}
+ul.data-list li.dir:before {
+    content: "\f114";
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    opacity: 0.75;
+    font-size: 80px;
+    font-family: "FontAwesome";
+}
+ul.data-list li.file.pdf:before {
+    content: "\f1c1";
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    opacity: 0.75;
+    font-size: 80px;
+    font-family: "FontAwesome";
+}
+ul.data-list li.dir.new:before {
+    content: "\f114";
+    font-size: 80px;
+    font-family: "FontAwesome";
+}
+ul.data-list li.dir.new input {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    border: solid 1px #ddd;
+    font-size: 0.8em;
+    height: 22px
+}
+ul.data-list li i.delete {
+    position: absolute;
+    top: -35px;
+    right: -25px;
+    width: 0;
+    height: 25px;
+    font-family: "FontAwesome";
+    font-size: 25px;
+    color: #FBFBFB;
+    text-shadow: 0 0 1px #000;
+    display: inline-block;
+    font-style: normal;
+    -moz-transition: all .25s ease-in-out;
+    -webkit-transition: all .25s ease-in-out;
+    -o-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
+    z-index: -1;
+    opacity: 0;
+}
+ul.data-list li i.delete:before {
+    content: "\f1f8";
+}
+ul.data-list li:hover i.delete {
+    right: 0;
+    width: 25px;
+    z-index: 2;
+    opacity: 1;
+}
+ul.data-list li img {
+    display: inline-block;
+    max-height: 100px;
+    max-width: 100px;
+    line-height: 100px;
+    vertical-align: middle;
+    float: none;
+    clear: both;
+}
+ul.data-list li a,
+ul.data-list li a:hover,
+ul.data-list li a:visited
+{
+    display: block;
+    height: 27px;
+    width: 100%;
+    line-height: 12px;
+    text-decoration: none;
+    font-size: 10px;
+    word-wrap: break-word;
+    bottom: 0;
+    position: absolute;
+    left: 0;
+    overflow: hidden;
+}
+ul.data-list li:hover a
+{
+    /*overflow: visible;*/
+}
+ul.data-list li:hover,
+ul.data-list li.selected
+{
+    background-color: #bce5fd;
+    box-shadow: 0 0 2px #067cbc inset;
+    border-radius: 3px;
+}
+input[type="text"].actual-dir {
+    border-radius: 0;
+    margin: 0 !important;
+    border: solid 1px #eee;
+    border-bottom: none 0;
+    background-color: #fefefe;
+    display: block;
+}
+a.new-dir-a,
+label.upload-a,
+a.check-all-a
+{
+    position: absolute;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    right: 20px;
+    z-index: 2;
+    color: #666;
+    cursor: pointer;
+    font-size: 24px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 43px;
+    margin-top: -40px;
+    text-decoration: none;
+    font-family: 'FontAwesome';
+}
+a.new-dir-a:hover,
+label.upload-a:hover,
+a.check-all-a:hover
+{
+    color: #2477a5;
+}
+a.check-all-a {
+    right: 120px;
+    font-size: 23px;
+    line-height: 44px;
+}
+label.upload-a {
+    right: 70px;
+    font-size: 23px;
+    line-height: 44px;
+}
+a.new-dir-a:before,
+a.check-all-a:before,
+label.upload-a:before
+{
+    content: "";
+    position: relative;
+    top: 0;
+    display: block;
+    width: 40px;
+    height: 40px;
+    left: 0;
+    font-family: 'FontAwesome';
+    text-align: center;
+}
+a.new-dir-a:after {
+    content: "\f067";
+    display: inline-block;
+    position: absolute;
+    font-size: 10px;
+    font-family: 'FontAwesome';
+    top: 0;
+    left: 0;
+    width: 40px;
+    line-height: 44px;
+}
+a.new-dir-a:before {
+    content: "\f114";
+}
+a.check-all-a:before {
+    content: "\f046";
+}
+label.upload-a:before {
+    content: "\f0ee";
+}
+ul.data-list li.dir.up:before {
+    color: #999;
+}
+ul.data-list li.dir.up:after {
+    content: "\f060";
+    display: inline-block;
+    width: 30px;
+    height: 100px;
+    opacity: 0.75;
+    font-size: 30px;
+    font-family: "FontAwesome";
+    position: absolute;
+    top: 0;
+    color: #999;
+    left: 39px;
+}
+input[data-m-action="file_manager"] + [name="actual_dir"] {
+    border-radius: 2px 2px 0 0;
+    margin-bottom: 0 !important;
+}

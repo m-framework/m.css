@@ -1,0 +1,46 @@
+.edit-bar {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: inline-block;
+    height: 40px;
+    min-width: 40px;
+    border-radius: 20px;
+    background-color: rgba(231, 231, 231, 0.5);
+    z-index: 10;
+}
+.edit-bar.edited {
+    background-color: rgba(192, 227, 239, 0.5);
+ }
+.edit-bar a {
+    display: none;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: middle;
+    color: #666;
+    cursor: pointer;
+    margin: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    background-color: transparent;
+    float: right;
+}
+.edit-bar a:hover {
+    text-decoration: none;
+    background-color: #fff;
+}
+.edit-bar a:first-child {
+    display: inline-block;
+}
+.edit-bar:hover a {
+    display: inline-block;
+}
+.edit-bar:hover a:first-child:before {
+    content: '\f141';
+}
+.edit-bar a.edit.save:before {
+    content: '\f0c7';
+}

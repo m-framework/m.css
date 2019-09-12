@@ -1,0 +1,66 @@
+a[data-m-action="drag_sort"] {
+    cursor: move;
+}
+[draggable] * {
+    pointer-events: none;
+}
+[draggable] {
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    /* Required to make elements draggable in old WebKit */
+    -khtml-user-drag: element;
+    -webkit-user-drag: element;
+    border-top: solid 1px transparent;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    position: relative;
+}
+[draggable] i.move {
+    position: absolute;
+    left: 8px;
+    top: 10px;
+    width: 8px;
+    bottom: 10px;
+    border-left: dotted 3px #999;
+    border-right: dotted 3px #999;
+    cursor: move;
+    display: inline-block;
+}
+.dragStartClass {
+    opacity: 0.4;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+[draggable].over {
+    border-top: solid 50px transparent;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+[draggable] a[href],
+[draggable] i.move,
+[draggable] textarea,
+[draggable] input[type="text"],
+[draggable] input[type="number"],
+[draggable] input[type="password"],
+[draggable] input[type="email"],
+[draggable] input[type="ip"],
+[draggable] select,
+[draggable] button,
+[draggable] input[type="radio"],
+[draggable] input[type="checkbox"],
+[draggable] input[type="radio"] + label,
+[draggable] input[type="checkbox"] + label
+{
+    pointer-events: initial;
+}

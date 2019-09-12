@@ -1,0 +1,80 @@
+/*!
+ * upload.css module of m.css v1.1
+ * https://m-framework.com/css/modal
+ *
+ * Copyright 2017 m-framework.com
+ * Released under the MIT license
+ * https://m-framework.com/css/license
+ *
+ * Author: mrinmiro@gmail.com
+ *
+ * Date: 2017-10-17T23:40Z
+ */
+.upload-wrapper {
+    /*width: 100%;*/
+    padding: 0;
+    margin: 20px 0 0 0;
+    height: 25px;
+    display: block;
+    position: relative;
+    text-align: center;
+    background-color: #ddd;
+}
+.upload-wrapper .progress-bar {
+    -moz-transition: all .25s ease-in-out;
+    -webkit-transition: all .25s ease-in-out;
+    -o-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
+    background-color: #72c3dd;
+    width: 0;
+    display: block;
+    height: 100%;
+}
+.upload-wrapper.success .progress-bar {
+    width: 100%;
+    background-color: #86dd9d;
+}
+.upload-wrapper.error {
+    background-color: #dd9897;
+}
+.upload-wrapper .upload-text {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 25px;
+    line-height: 25px;
+    top: 0;
+    left: 0;
+    vert-align: middle;
+    color: #333;
+    font-size: 12px;
+}
+.upload-wrapper .cancel {
+    width: 25px;
+    height: 25px;
+    font-size: 25px;
+    font-family: "FontAwesome";
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    margin: 0;
+}
+.upload-wrapper .cancel:before {
+    content: "\f057";
+}
+.upload-wrapper.image-upload-wrap {
+    height: auto;
+    max-height: 240px;
+}
+.upload-wrapper.image-upload-wrap img {
+    height: auto;
+    max-height: 100%;
+    width: 100%;
+}
+.upload-wrapper:before {
+    content: '';
+    display: none !important;
+}

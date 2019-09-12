@@ -1,0 +1,25 @@
+div.suggestions {
+    position: absolute;
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.75);
+    overflow-x: hidden;
+    overflow-y: auto;
+    max-height: 200px;
+    z-index: 1;
+    left: 10px;
+    font-size: 0.9em;
+}
+.suggestions > a {
+    display: table;
+    float: none;
+    clear: both;
+    margin: 2px 0;
+
+}
+.suggestions > a:after {
+    content:"\a";
+    white-space: pre;
+}
+input[data-m-action="ajax_suggestions"] {
+    display: none;
+}

@@ -1,0 +1,32 @@
+/*!
+ * popover.css module of m.css v1.1
+ * https://m-framework.com/css/modal
+ *
+ * Copyright 2017 m-framework.com
+ * Released under the MIT license
+ * https://m-framework.com/css/license
+ *
+ * Author: mrinmiro@gmail.com
+ *
+ * Date: 2017-10-17T23:40Z
+ */
+.popover {
+    background-color: #fff;
+    padding: 10px;
+    max-width: 320px;
+    position: absolute;
+    border-radius: 5px;
+    border: solid 1px #ddd;
+    box-shadow: 0 0 8px #ddd;
+    display: none;
+    font-family: 'Open Sans';
+    font-size: 14px;
+    z-index: 2;
+    min-width: 200px;
+}
+.popover.active {
+    display: inline-block;
+}
+.popover p:first-child {
+    margin: 0;
+}

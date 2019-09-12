@@ -1,0 +1,51 @@
+/*!
+ * scroll2.css module of m.css v1.1
+ * https://m-framework.com/css/modal
+ *
+ * Copyright 2017 m-framework.com
+ * Released under the MIT license
+ * https://m-framework.com/css/license
+ *
+ * Author: mrinmiro@gmail.com
+ *
+ * Date: 2017-10-17T23:40Z
+ */
+.scroll-up {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    color: #f0f0f0;
+	z-index: 9999;
+}
+.scroll-up:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+}
+.scroll-up:before {
+    content: "\f106";
+    font-family: 'FontAwesome';
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 30px;
+    vertical-align: middle;
+    line-height: 36px;
+}
+.scroll-up[data-m-auto-hide] {
+    /*display: none;*/
+    visibility: hidden;
+    opacity: 0;
+}
+@media (max-width: 768px) {
+    .scroll-up {
+        right: 10px;
+        bottom: 10px;
+    }
+}

@@ -1,0 +1,36 @@
+.drag_sortable {
+    display: block;
+    list-style: none;
+    position: relative;
+}
+.drag_sortable > * > i.move {
+    position: absolute;
+    left: 8px;
+    top: 10px;
+    width: 8px;
+    max-height: 24px;
+    bottom: 10px;
+    border-left: dotted 3px #999;
+    border-right: dotted 3px #999;
+    cursor: move;
+    display: inline-block;
+}
+.drag_sortable > * {
+    display: block;
+    margin: 1px;
+    padding: 10px;
+    /*border-radius: 4px;*/
+    cursor: move;
+    /*background: #fff;*/
+}
+.drag_sortable > *:hover {
+    background: #ffffe0;
+}
+.drag_sortable > *.active {
+    background: #ccc;
+}
+.drag_sortable > *.dragging {
+    background: #e0ffff;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+    opacity: 0.5;
+}

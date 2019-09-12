@@ -1,0 +1,118 @@
+.carousel-container .carousel {
+    height: 300px;
+}
+.carousel-container .carousel > * {
+    height: 300px;
+}
+.carousel-container {
+    overflow: hidden;
+    position: relative;
+    padding: 0;
+}
+.carousel-container .carousel {
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    list-style: none;
+}
+.carousel-container .carousel > * {
+    display: inline-block;
+    position: relative;
+    margin: 0;
+    list-style: none;
+    background-size: cover;
+    background-position: center center;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    touch-action: pan-y;
+    -ms-touch-action: pan-y;
+    user-drag: none;
+}
+.carousel-container .carousel > * .title {
+    background-color: #fff;
+    color: #0289c8;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 20px;
+    font-family: 'Open Sans';
+    z-index: 3;
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    margin-top: -24px;
+    top: 50%;
+}
+.carousel-container .carousel > * .title:hover {
+    background-color: #0289c8;
+    color: #fff;
+}
+.carousel-container .arrow {
+    position: absolute;
+    top: 50%;
+    height: 40px;
+    width: 40px;
+    font-size: 60px;
+    line-height: 40px;
+    text-align: center;
+    vertical-align: middle;
+    color: #fff;
+    margin-top: -20px;
+    font-family: 'FontAwesome';
+    text-decoration: none;
+    opacity: 0.75;
+    display: inline-block;
+    text-shadow: 1px 1px 3px #999;
+    z-index: 5;
+}
+.carousel-container .arrow:hover {
+    text-decoration: none;
+    opacity: 0.95;
+}
+.carousel-container .arrow.left {
+    left: 0;
+}
+.carousel-container .arrow.right {
+    right: 0;
+}
+.carousel-container .arrow.left:before {
+    content: "\f104";
+    vertical-align: middle;
+}
+.carousel-container .arrow.right:before {
+    content: "\f105";
+    vertical-align: middle;
+}
+.carousel-container .carousel-edit {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.75);
+    width: 100%;
+    padding: 3px;
+}
+
+@media (max-width: 480px) {
+    .carousel-container .carousel {
+        height: 200px;
+    }
+    .carousel-container .carousel > * {
+        height: 200px;
+    }
+    .carousel-container .carousel > * .title {
+        top: auto;
+        bottom: 0;
+        background-color: rgba(255, 255, 255, 0.9);
+        position: absolute;
+        left: 0;
+        padding: 5px 0;
+        width: 100%;
+        margin: 0;
+    }
+}

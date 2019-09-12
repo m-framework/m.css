@@ -1,0 +1,78 @@
+/*!
+ * ajax_comma_parameters.css module of m.css v1.1
+ * https://m-framework.com/css/modal
+ *
+ * Copyright 2017 m-framework.com
+ * Released under the MIT license
+ * https://m-framework.com/css/license
+ *
+ * Author: mrinmiro@gmail.com
+ *
+ * Date: 2017-10-17T23:38Z
+ */
+input[data-m-action="ajax_comma_parameters"] + .parameters-wrap {
+    display: block;
+    border-radius: 3px;
+    border: 1px solid #DDD;
+    padding: 7px 10px 0 10px;
+    margin: 20px 0 0 0;
+    position: relative;
+    background-color: #fbfbfb;
+}
+input[data-m-action="ajax_comma_parameters"] + .parameters-wrap input {
+    border-radius: 2px;
+    border: none 0;
+    background-color: #F0F0F0;
+    height: 25px;
+    line-height: 25px;
+    vertical-align: middle;
+    padding: 0 5px;
+    margin: 0 0 8px 0;
+    width: 100px;
+}
+input[data-m-action="ajax_comma_parameters"] + .parameters-wrap span {
+    border-radius: 3px;
+    background-color: #F0F0F0;
+    position: relative;
+    display: inline-block;
+    margin: 0 10px 8px 0;
+    font-size: 12px;
+    padding: 3px 30px 5px 6px;
+}
+input[data-m-action="ajax_comma_parameters"] + .parameters-wrap span i.delete {
+    font-style: normal;
+    color: #6A94AB;
+    width: 20px;
+    height: 20px;
+    background-color: #DDD;
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    cursor: pointer;
+    border-radius: 3px;
+    font-family: "FontAwesome";
+    text-align: center;
+    line-height: 20px;
+    vertical-align: middle;
+}
+input[data-m-action="ajax_comma_parameters"] + .parameters-wrap span i.delete:before {
+    content: "\f00d";
+}
+input[data-m-action="ajax_comma_parameters"] + .parameters-wrap div {
+    display: inline-block;
+    position: relative;
+    vertical-align: bottom;
+}
+input[data-m-action="ajax_comma_parameters"] + .parameters-wrap .suggestions {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 26px;
+    height: auto;
+}
+input[data-m-action="ajax_comma_parameters"] + .parameters-wrap .suggestions span {
+    padding: 3px 6px;
+    margin: 0 5px 5px 0;
+    background-color: #D3E7F0;
+    cursor: pointer;
+}

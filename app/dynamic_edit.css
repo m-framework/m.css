@@ -1,0 +1,13 @@
+.editable[data-id="null"] a.delete {
+    display: none;
+}
+a.edit.save i.fa:before {
+    content: "\f0c7";
+}
+h1 textarea,
+h2 textarea,
+h3 textarea,
+h4 textarea
+{
+    padding: 5px 10px;
+}
