@@ -8,6 +8,8 @@
     overflow: hidden;
     position: relative;
     padding: 0;
+    display: block;
+    max-width: 100%;
 }
 .carousel-container .carousel {
     width: 100%;
@@ -16,6 +18,8 @@
     padding: 0;
     position: relative;
     list-style: none;
+    float: none;
+    clear: both;
 }
 .carousel-container .carousel > * {
     display: inline-block;
@@ -32,6 +36,7 @@
     touch-action: pan-y;
     -ms-touch-action: pan-y;
     user-drag: none;
+    float: left;
 }
 .carousel-container .carousel > * .title {
     background-color: #fff;
