@@ -464,10 +464,10 @@ button:hover .fa,
 button .fa.single,
 .btn .fa.single
 {
-    margin-right: -8px;
     border-radius: 3px;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
+    margin: 0 -20px;
 }
 form label {
     display: -webkit-box;
@@ -550,7 +550,7 @@ pre, .code {
     width: auto;
     overflow-y: hidden;
     overflow-x: auto;
-    max-width: 1024px;
+    max-width: 100%;
     position: relative;
     font-style: normal;
     font-weight: 200;
@@ -752,8 +752,11 @@ iframe {
     top: 0;
 }
 
-/* Medium devices (from 768px to 1366px width) */
-@media (max-width: 1366px) {
+/* Medium devices (from 768px to 1280px width) */
+@media (max-width: 1280px) {
+    .container {
+        max-width: 1180px;
+    }
     .md-w100 {
         -ms-flex: 0 0 calc(100% - 10px);
         flex: 0 0 calc(100% - 10px);
@@ -831,11 +834,6 @@ iframe {
         text-align: right;
     }
     .md-text-justify, .md-txt-j {text-align: justify}
-}
-@media (max-width: 1280px) {
-    .container {
-        max-width: 1180px;
-    }
 }
 
 /* Small devises (from 480px up to 768px width) */
