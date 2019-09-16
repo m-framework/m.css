@@ -945,7 +945,7 @@ iframe {
 
 /* Extra small devises (up to 480px width) */
 @media (max-width: 480px) {
-    .w100, .w75, .w66, .w50, .w33, .w25, .w20, .w16, [class*=" sm-"], [class*=" md-"] {
+    .w100, .w80, .w75, .w66, .w50, .w33, .w25, .w20, .w16, .w12, .w10, [class*=" sm-"], [class*=" md-"] {
         -ms-flex: 0 0 calc(100% - 10px);
         flex: 0 0 calc(100% - 10px);
         max-width: calc(100% - 10px);
