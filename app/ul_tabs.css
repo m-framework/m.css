@@ -21,11 +21,13 @@ ul.tabs > li {
     display: none;
 }
 ul.tabs > li.links {
-    display: table;
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
 }
 ul.tabs > li.links a {
-    display: table-cell;
     padding: 0;
     color: #666;
     cursor: pointer;
@@ -34,9 +36,23 @@ ul.tabs > li.links a {
     border-bottom: solid 1px #ddd;
     border-right: solid 1px #ddd;
     background-color: #f9f9f9;
-    height: 50px;
+    min-height: 40px;
     vertical-align: middle;
     font-size: 0.9em;
+    line-height: 1em;
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    max-width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
 }
 ul.tabs > li.active,
 ul.tabs > li[data-m-action="tabs"]:first-of-type
@@ -44,6 +60,7 @@ ul.tabs > li[data-m-action="tabs"]:first-of-type
     display: block;
     padding: inherit;
     overflow-x: auto;
+    background-color: #fff;
 }
 ul.tabs > li[data-m-action="tabs"] {
     padding: 10px 0;
@@ -57,6 +74,7 @@ ul.tabs > li.links a.active
     text-decoration: none;
     border-bottom: solid 1px #fff;
     background-color: #fff;
+    font-weight: 800;
 }
 ul.tabs > li.links a:hover
 {
