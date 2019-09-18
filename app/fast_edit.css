@@ -14,29 +14,31 @@
  }
 .edit-bar a {
     display: none;
-    width: 30px;
-    height: 30px;
+    width: 0;
+    height: 0;
     line-height: 30px;
     border-radius: 50%;
     text-align: center;
     vertical-align: middle;
     color: #666;
     cursor: pointer;
-    margin: 5px;
+    margin: 0;
     text-decoration: none;
     font-size: 16px;
     background-color: transparent;
     float: right;
+    display: inline-block;
+    overflow: hidden;
 }
 .edit-bar a:hover {
     text-decoration: none;
     background-color: #fff;
 }
-.edit-bar a:first-child {
-    display: inline-block;
-}
+.edit-bar a:first-child,
 .edit-bar:hover a {
-    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin: 5px;
 }
 .edit-bar:hover a:first-child:before {
     content: '\f141';
