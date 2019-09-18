@@ -97,12 +97,13 @@ ul.data-list li:hover i.delete {
 }
 ul.data-list li img {
     display: inline-block;
-    max-height: 100px;
-    max-width: 100px;
+    max-height: 100px !important;
+    max-width: 100px !important;
     line-height: 100px;
     vertical-align: middle;
     float: none;
     clear: both;
+    margin: 0 !important;
 }
 ul.data-list li a,
 ul.data-list li a:hover,
