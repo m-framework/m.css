@@ -1,0 +1,173 @@
+[data-m-action="tooltip"] {
+    position: relative;
+    cursor: pointer;
+}
+
+[data-m-action="tooltip"] > .tooltip {
+    position: absolute;
+    visibility: hidden;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+
+    -moz-transition: all .25s ease-in-out;
+    -webkit-transition: all .25s ease-in-out;
+    -o-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
+
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform:    translate3d(0, 0, 0);
+    transform:         translate3d(0, 0, 0);
+    pointer-events: none;
+    padding: 0 10px;
+    width: 160px;
+    font-size: 1em;
+    line-height: 1.2;
+}
+
+[data-m-action="tooltip"] > .tooltip.active {
+    visibility: visible;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    opacity: 1;
+    z-index: 1000;
+    background-color: #000;
+    background-color: hsla(0, 0%, 20%, 0.7);
+    color: #fff;
+    border-radius: 4px;
+}
+
+[data-m-action="tooltip"][data-m-direction="top"] > .tooltip:before
+{
+    margin-left: -6px;
+    margin-bottom: -12px;
+    left: 50%;
+    bottom: 0;
+}
+
+[data-m-action="tooltip"][data-m-direction="top"] > .tooltip
+{
+    bottom: 100%;
+    left: 50%;
+}
+
+[data-m-action="tooltip"] > .tooltip:before
+{
+    content: '';
+    z-index: 1001;
+    background: transparent;
+    position: absolute;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+    opacity: 0;
+    visibility: visible;
+    border: 6px solid transparent;
+    border-top-color: #333;
+    -moz-transition: all .25s ease-in-out;
+    -webkit-transition: all .25s ease-in-out;
+    -o-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
+}
+
+[data-m-action="tooltip"] > .tooltip.active:before
+{
+    opacity: 0.7;
+}
+
+[data-m-action="tooltip"][data-m-direction="top"] > .tooltip,
+[data-m-action="tooltip"][data-m-direction="bottom"] > .tooltip
+{
+    margin-left: -80px;
+}
+
+[data-m-action="tooltip"][data-m-direction="top"] > .tooltip.active
+{
+    -webkit-transform: translateY(-12px);
+    -moz-transform:    translateY(-12px);
+    transform:         translateY(-12px);
+}
+
+/* Left */
+
+[data-m-action="tooltip"][data-m-direction="left"] > .tooltip:before {
+    margin-left: 0;
+    margin-right: -12px;
+    margin-bottom: 0;
+    border-top-color: transparent;
+    border-left-color: #000;
+    border-left-color: hsla(0, 0%, 20%, 0.9);
+}
+
+/* Bottom */
+[data-m-action="tooltip"][data-m-direction="bottom"] > .tooltip
+{
+    top: 100%;
+    bottom: auto;
+    left: 50%;
+}
+
+[data-m-action="tooltip"][data-m-direction="right"] > .tooltip.active {
+    -webkit-transform: translateX(12px) translateY(-50%);
+    -moz-transform:    translateX(12px) translateY(-50%);
+    transform:         translateX(12px) translateY(-50%);
+}
+
+[data-m-action="tooltip"][data-m-direction="left"] > .tooltip.active {
+    -webkit-transform: translateX(-12px) translateY(-50%);
+    -moz-transform:    translateX(-12px) translateY(-50%);
+    transform:         translateX(-12px) translateY(-50%);
+}
+
+[data-m-action="tooltip"][data-m-direction="bottom"] > .tooltip:before {
+    margin: -12px 0 0 -6px;
+    border-top-color: transparent;
+    border-bottom-color: #333;
+    left: 50%;
+}
+
+[data-m-action="tooltip"][data-m-direction="bottom"] > .tooltip.active {
+    -webkit-transform: translateY(12px);
+    -moz-transform:    translateY(12px);
+    transform:         translateY(12px);
+}
+
+/* Right */
+[data-m-action="tooltip"][data-m-direction="right"] > .tooltip,
+[data-m-action="tooltip"][data-m-direction="left"] > .tooltip
+{
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+[data-m-action="tooltip"][data-m-direction="right"] > .tooltip
+{
+    left: 100%;
+}
+[data-m-action="tooltip"][data-m-direction="left"] > .tooltip
+{
+    right: 100%;
+}
+
+[data-m-action="tooltip"][data-m-direction="right"] > .tooltip:before,
+[data-m-action="tooltip"][data-m-direction="left"] > .tooltip:before
+{
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+    opacity: 0.7;
+    position: absolute;
+    top: 50%;
+}
+
+[data-m-action="tooltip"][data-m-direction="right"] > .tooltip:before {
+    margin: -6px 0 0 -12px;
+    border-top-color: transparent;
+    border-right-color: #333333;
+    left: 0;
+}
+
+[data-m-action="tooltip"][data-m-direction="left"] > .tooltip:before {
+    margin: -6px -12px 0 0;
+    border-top-color: transparent;
+    border-left-color: #333333;
+    right: 0;
+}

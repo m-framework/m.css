@@ -1,0 +1,178 @@
+/*!
+ * datepicker.css module of m.css v1.2
+ * https://m-framework.com/css/modal
+ *
+ * Copyright 2017 m-framework.com
+ * Released under the MIT license
+ * https://m-framework.com/css/license
+ *
+ * Author: mrinmiro@gmail.com
+ *
+ * Date: 2017-10-17T23:38Z
+ */
+.m-dateranges {
+    text-align: center;
+}
+.m-calendar {
+    box-sizing: border-box;
+    width: 210px !important;
+    height: auto;
+    position: static;
+    display: inline-block;
+    padding: 0;
+    background-color: #fff;
+    box-shadow: none;
+    z-index: 100;
+    border-radius: 4px;
+    text-align: left;
+    margin: 5px;
+    list-style: none;
+    vertical-align: top;
+}
+.m-calendar > li:nth-child(1),
+.m-calendar > li:nth-child(2)
+{
+    width: 100%;
+    display: block;
+    min-height: 36px;
+    float: none;
+    clear: both;
+    vertical-align: middle;
+    line-height: 30px;
+    list-style: none;
+}
+.m-calendar > li:nth-child(1) > select {
+    border: solid 1px #f1f1f1;
+    border-radius: 2px;
+    background-color: #fff;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAFCAYAAACaTbYsAAAAN0lEQVQYlY3MsQ0AIAwDwYyezTzaU4EUIAZLLu9DEplpL4nbAsAFOrhwF3Cw4D3wggeegR8IMAA7GAWgX2fvugAAAABJRU5ErkJggg==');
+    background-position: right center;
+    background-repeat: no-repeat;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+.m-calendar > li:nth-child(1) > select,
+.m-calendar > li:nth-child(1) > select option
+{
+    vertical-align: middle;
+    line-height: 26px;
+    height: 30px;
+    padding: 0;
+    overflow: hidden;
+    cursor: pointer;
+    min-height: 30px;
+}
+.m-calendar > li:nth-child(1) > select:focus {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAFCAYAAACaTbYsAAAANElEQVQYlY3MwQ0AIBACQUqnM0rDnzHkVHiSzMIxSZaU9zgkJGmSVWDjE7YB3GATwAv+AgtrUgWgNZQZYAAAAABJRU5ErkJggg==');
+    background-position: right center;
+}
+.m-calendar > li:nth-child(1) {
+    position: relative;
+    padding: 0;
+}
+.m-calendar > li:nth-child(1) > * {
+    margin: 0 2px;
+}
+.m-calendar > li:nth-child(1) > i {
+    display: inline-block;
+    height: 30px;
+    cursor: pointer;
+    font-size: 15px;
+    line-height: 22px;
+    vertical-align: middle;
+    top: 4px;
+    padding: 4px;
+    color: #666;
+    background-color: #fff;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    width: 26px;
+    text-align: center;
+    border: solid 1px #f1f1f1;
+}
+.m-calendar > li:nth-child(1) > select:nth-child(2),
+.m-calendar > li:nth-child(1) > select:nth-child(3)
+{
+    display: inline-block;
+    width: 56px;
+}
+.m-calendar > li:nth-child(1) > select:nth-child(3) {
+    width: 86px;
+}
+.m-calendar > li:nth-child(2) > b {
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    font-size: 13px;
+    font-weight: 4;
+    line-height: 26px;
+    vertical-align: middle;
+    text-align: center;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background-color: #efefef;
+    margin: 2px;
+    overflow: hidden;
+}
+.m-calendar > li:nth-child(3)
+{
+    width: 100%;
+    display: block;
+    min-height: 30px;
+    float: none;
+    clear: both;
+    list-style: none;
+}
+.m-calendar > li:nth-child(3) > i {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+}
+.m-calendar > li:nth-child(3) > a {
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 26px;
+    vertical-align: middle;
+    text-align: center;
+    text-decoration: none;
+    margin: 2px;
+    padding: 0;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    box-sizing: border-box;
+    border: solid 1px #ececec;
+    cursor: pointer;
+}
+.m-calendar > li:nth-child(3) > a:hover,
+.m-calendar > li:nth-child(3) > a.active,
+.m-calendar > li:nth-child(1) > i:hover
+{
+    border: solid 1px #46a9e0;
+    color: #fff;
+    background-color: #46a9e0;
+}
+.m-calendar > li:nth-child(3) > a.current
+{
+    border: solid 1px #399AD5;
+    color: #333;
+    background-color: #fff;
+}
+.m-calendar > li:nth-child(3) > a.disabled,
+.m-calendar > li:nth-child(3) > a.early
+{
+    background-color: #f3f3f3;
+    color: #999;
+}
+.m-dateranges.dateranges-absolute {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.85);
+}
