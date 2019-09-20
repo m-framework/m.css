@@ -139,6 +139,10 @@ body.with-modal:before
     -khtml-opacity: 0.5;
     opacity: 0.5;
 }
+.modal .content > .code {
+    padding: 0 0 0 40px;
+}
+
 
 
 @media (max-width: 1366px) {
