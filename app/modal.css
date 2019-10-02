@@ -35,14 +35,20 @@ body .to-modal,
     transition: all .25s ease-in-out;
 }
 .modal-block {
-    margin: 40px auto;
+    top: 40px;
     box-shadow: 0 0 40px #444;
     position: relative;
     min-width: 480px;
     max-width: 1180px;
     width: auto;
-    display: block;
+    display: inline-block;
     background-color: #fff;
+    left: 50%;
+    -ms-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    transform: translateX(-50%);
 }
 .modal > .modal-block > .title {
     padding: 0 20px;
