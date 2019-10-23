@@ -90,6 +90,7 @@ h6 {font-size: .75em}
     margin: 0 -4px;
     width: 100%;
     width: calc(100% + 8px);
+    max-width: calc(100% + 8px);
 }
 .row > .w100,
 .row > .w80,
@@ -109,75 +110,87 @@ h6 {font-size: .75em}
 }
 .w100 {
     width: 100%;
+    width: calc(100% - 8px);
+    max-width: calc(100% - 8px);
     -ms-flex: 0 0 calc(100% - 8px);
     flex: 0 0 calc(100% - 8px);
-    max-width: calc(100% - 8px);
 }
 .w80 {
     width: 80%;
+    width: calc(80% - 8px);
+    max-width: calc(80% - 8px);
     -ms-flex: 0 0 calc(80% - 8px);
     flex: 0 0 calc(80% - 8px);
-    max-width: calc(80% - 8px);
 }
 .w75 {
     width: 75%;
+    width: calc(75% - 8px);
+    max-width: calc(75% - 8px);
     -ms-flex: 0 0 calc(75% - 8px);
     flex: 0 0 calc(75% - 8px);
-    max-width: calc(75% - 8px);
 }
 .w66 {
     width: 66.666%;
+    width: calc(66.666% - 8px);
+    max-width: calc(66.666% - 8px);
     -ms-flex: 0 0 calc(66.666% - 8px);
     flex: 0 0 calc(66.666% - 8px);
-    max-width: calc(66.666% - 8px);
 }
 .w50 {
     width: 50%;
+    width: calc(50% - 8px);
+    max-width: calc(50% - 8px);
     -ms-flex: 0 0 calc(50% - 8px);
     flex: 0 0 calc(50% - 8px);
-    max-width: calc(50% - 8px);
 }
 .w33 {
     width: 33.333%;
+    width: calc(33.333% - 8px);
+    max-width: calc(33.333% - 8px);
     -ms-flex: 0 0 calc(33.333% - 8px);
     flex: 0 0 calc(33.333% - 8px);
-    max-width: calc(33.333% - 8px);
 }
 .w25 {
     width: 25%;
+    width: calc(25% - 8px);
+    max-width: calc(25% - 8px);
     -ms-flex: 0 0 calc(25% - 8px);
     flex: 0 0 calc(25% - 8px);
-    max-width: calc(25% - 8px);
 }
 .w20 {
     width: 20%;
+    width: calc(20% - 8px);
+    max-width: calc(20% - 8px);
     -ms-flex: 0 0 calc(20% - 8px);
     flex: 0 0 calc(20% - 8px);
-    max-width: calc(20% - 8px);
 }
 .w16 {
     width: 16.666%;
+    width: calc(16.666% - 8px);
+    max-width: calc(16.666% - 8px);
     -ms-flex: 0 0 calc(16.666% - 8px);
     flex: 0 0 calc(16.666% - 8px);
-    max-width: calc(16.666% - 8px);
 }
 .w12 {
     width: 12.5%;
+    width: calc(12.5% - 8px);
+    max-width: calc(12.5% - 8px);
     -ms-flex: 0 0 calc(12.5% - 8px);
     flex: 0 0 calc(12.5% - 8px);
-    max-width: calc(12.5% - 8px);
 }
 .w10 {
     width: 10%;
+    width: calc(10% - 8px);
+    max-width: calc(10% - 8px);
     -ms-flex: 0 0 calc(10% - 8px);
     flex: 0 0 calc(10% - 8px);
-    max-width: calc(10% - 8px);
 }
 .w8 {
     width: 8.333%;
+    width: calc(8.333% - 8px);
+    max-width: calc(8.333% - 8px);
     -ms-flex: 0 0 calc(8.333% - 8px);
     flex: 0 0 calc(8.333% - 8px);
-    max-width: calc(8.333% - 8px);
 }
 .block {
     padding: 8px;
@@ -218,7 +231,6 @@ select
 {
     display: block;
     width: 100%;
-    width: calc(100% - 8px);
     background-color: #fbfbfb;
     border: solid 1px #ddd;
     min-height: 1.5em;
@@ -265,6 +277,16 @@ input[type="date"]
 {
     height: 40px;
     min-height: 40px;
+}
+input[type=number] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+    margin: 4px;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
 select[multiple][size] {
     height: auto;
@@ -753,6 +775,9 @@ iframe {
 {
     display: none
 }
+.lg-visible {
+    display: block;
+}
 .lg-hidden {
     display: none;
 }
@@ -768,64 +793,88 @@ iframe {
         max-width: 1140px;
     }
     .md-w100 {
+        width: 100%;
+        width: calc(100% - 8px);
+        max-width: calc(100% - 8px);
         -ms-flex: 0 0 calc(100% - 8px);
         flex: 0 0 calc(100% - 8px);
-        max-width: calc(100% - 8px);
     }
     .md-w80 {
+        width: 80%;
+        width: calc(80% - 8px);
+        max-width: calc(80% - 8px);
         -ms-flex: 0 0 calc(80% - 8px);
         flex: 0 0 calc(80% - 8px);
-        max-width: calc(80% - 8px);
     }
     .md-w75 {
+        width: 75%;
+        width: calc(75% - 8px);
+        max-width: calc(75% - 8px);
         -ms-flex: 0 0 calc(75% - 8px);
         flex: 0 0 calc(75% - 8px);
-        max-width: calc(75% - 8px);
     }
     .md-w66 {
+        width: 66.666%;
+        width: calc(66.666% - 8px);
+        max-width: calc(66.666% - 8px);
         -ms-flex: 0 0 calc(66.666% - 8px);
         flex: 0 0 calc(66.666% - 8px);
-        max-width: calc(66.666% - 8px);
     }
     .md-w50 {
+        width: 50%;
+        width: calc(50% - 8px);
+        max-width: calc(50% - 8px);
         -ms-flex: 0 0 calc(50% - 8px);
         flex: 0 0 calc(50% - 8px);
-        max-width: calc(50% - 8px);
     }
     .md-w33 {
+        width: 33.333%;
+        width: calc(33.333% - 8px);
+        max-width: calc(33.333% - 8px);
         -ms-flex: 0 0 calc(33.333% - 8px);
         flex: 0 0 calc(33.333% - 8px);
-        max-width: calc(33.333% - 8px);
     }
     .md-w25 {
+        width: 25%;
+        width: calc(25% - 8px);
+        max-width: calc(25% - 8px);
         -ms-flex: 0 0 calc(25% - 8px);
         flex: 0 0 calc(25% - 8px);
-        max-width: calc(25% - 8px);
     }
     .md-w20 {
+        width: 20%;
+        width: calc(20% - 8px);
+        max-width: calc(20% - 8px);
         -ms-flex: 0 0 calc(20% - 8px);
         flex: 0 0 calc(20% - 8px);
-        max-width: calc(20% - 8px);
     }
     .md-w16 {
+        width: 16.666%;
+        width: calc(16.666% - 8px);
+        max-width: calc(16.666% - 8px);
         -ms-flex: 0 0 calc(16.666% - 8px);
         flex: 0 0 calc(16.666% - 8px);
-        max-width: calc(16.666% - 8px);
     }
     .md-w12 {
+        width: 12.5%;
+        width: calc(12.5% - 8px);
+        max-width: calc(12.5% - 8px);
         -ms-flex: 0 0 calc(12.5% - 8px);
         flex: 0 0 calc(12.5% - 8px);
-        max-width: calc(12.5% - 8px);
     }
     .md-w10 {
+        width: 10%;
+        width: calc(10% - 8px);
+        max-width: calc(10% - 8px);
         -ms-flex: 0 0 calc(10% - 8px);
         flex: 0 0 calc(10% - 8px);
-        max-width: calc(10% - 8px);
     }
     .md-w8 {
+        width: 8.333%;
+        width: calc(8.333% - 8px);
+        max-width: calc(8.333% - 8px);
         -ms-flex: 0 0 calc(8.333% - 8px);
         flex: 0 0 calc(8.333% - 8px);
-        max-width: calc(8.333% - 8px);
     }
     .lg-visible {display: none}
     .lg-hidden {display: block}
@@ -854,64 +903,88 @@ iframe {
 /* Small devises (from 480px up to 768px width) */
 @media (max-width: 768px) {
     .sm-w100 {
+        width: 100%;
+        width: calc(100% - 8px);
+        max-width: calc(100% - 8px);
         -ms-flex: 0 0 calc(100% - 8px);
         flex: 0 0 calc(100% - 8px);
-        max-width: calc(100% - 8px);
     }
     .sm-w80 {
+        width: 80%;
+        width: calc(80% - 8px);
+        max-width: calc(80% - 8px);
         -ms-flex: 0 0 calc(80% - 8px);
         flex: 0 0 calc(80% - 8px);
-        max-width: calc(80% - 8px);
     }
     .sm-w75 {
+        width: 75%;
+        width: calc(75% - 8px);
+        max-width: calc(75% - 8px);
         -ms-flex: 0 0 calc(75% - 8px);
         flex: 0 0 calc(75% - 8px);
-        max-width: calc(75% - 8px);
     }
     .sm-w66 {
+        width: 66.666%;
+        width: calc(66.666% - 8px);
+        max-width: calc(66.666% - 8px);
         -ms-flex: 0 0 calc(66.666% - 8px);
         flex: 0 0 calc(66.666% - 8px);
-        max-width: calc(66.666% - 8px);
     }
     .sm-w50 {
+        width: 50%;
+        width: calc(50% - 8px);
+        max-width: calc(50% - 8px);
         -ms-flex: 0 0 calc(50% - 8px);
         flex: 0 0 calc(50% - 8px);
-        max-width: calc(50% - 8px);
     }
     .sm-w33 {
+        width: 33.333%;
+        width: calc(33.333% - 8px);
+        max-width: calc(33.333% - 8px);
         -ms-flex: 0 0 calc(33.333% - 8px);
         flex: 0 0 calc(33.333% - 8px);
-        max-width: calc(33.333% - 8px);
     }
     .sm-w25 {
+        width: 25%;
+        width: calc(25% - 8px);
+        max-width: calc(25% - 8px);
         -ms-flex: 0 0 calc(25% - 8px);
         flex: 0 0 calc(25% - 8px);
-        max-width: calc(25% - 8px);
     }
     .sm-w20 {
+        width: 20%;
+        width: calc(20% - 8px);
+        max-width: calc(20% - 8px);
         -ms-flex: 0 0 calc(20% - 8px);
         flex: 0 0 calc(20% - 8px);
-        max-width: calc(20% - 8px);
     }
     .sm-w16 {
+        width: 16.666%;
+        width: calc(16.666% - 8px);
+        max-width: calc(16.666% - 8px);
         -ms-flex: 0 0 calc(16.666% - 8px);
         flex: 0 0 calc(16.666% - 8px);
-        max-width: calc(16.666% - 8px);
     }
     .sm-w12 {
+        width: 12.5%;
+        width: calc(12.5% - 8px);
+        max-width: calc(12.5% - 8px);
         -ms-flex: 0 0 calc(12.5% - 8px);
         flex: 0 0 calc(12.5% - 8px);
-        max-width: calc(12.5% - 8px);
     }
     .sm-w10 {
+        width: 10%;
+        width: calc(10% - 8px);
+        max-width: calc(10% - 8px);
         -ms-flex: 0 0 calc(10% - 8px);
         flex: 0 0 calc(10% - 8px);
-        max-width: calc(10% - 8px);
     }
     .sm-w8 {
+        width: 8.333%;
+        width: calc(8.333% - 8px);
+        max-width: calc(8.333% - 8px);
         -ms-flex: 0 0 calc(8.333% - 8px);
         flex: 0 0 calc(8.333% - 8px);
-        max-width: calc(8.333% - 8px);
     }
     .md-visible {
         display: none;
@@ -966,69 +1039,95 @@ iframe {
 /* Extra small devises (up to 480px width) */
 @media (max-width: 480px) {
     .w100, .w80, .w75, .w66, .w50, .w33, .w25, .w20, .w16, .w12, .w10, .w8, [class*=" sm-"], [class*=" md-"] {
+        width: 100%;
+        width: calc(100% - 8px);
+        max-width: calc(100% - 8px);
         -ms-flex: 0 0 calc(100% - 8px);
         flex: 0 0 calc(100% - 8px);
-        max-width: calc(100% - 8px);
     }
     .xs-w100 {
+        width: 100%;
+        width: calc(100% - 8px);
+        max-width: calc(100% - 8px);
         -ms-flex: 0 0 calc(100% - 8px);
         flex: 0 0 calc(100% - 8px);
-        max-width: calc(100% - 8px);
     }
     .xs-w80 {
+        width: 80%;
+        width: calc(80% - 8px);
+        max-width: calc(80% - 8px);
         -ms-flex: 0 0 calc(80% - 8px);
         flex: 0 0 calc(80% - 8px);
-        max-width: calc(80% - 8px);
     }
     .xs-w75 {
+        width: 75%;
+        width: calc(75% - 8px);
+        max-width: calc(75% - 8px);
         -ms-flex: 0 0 calc(75% - 8px);
         flex: 0 0 calc(75% - 8px);
-        max-width: calc(75% - 8px);
     }
     .xs-w66 {
+        width: 66.666%;
+        width: calc(66.666% - 8px);
+        max-width: calc(66.666% - 8px);
         -ms-flex: 0 0 calc(66.666% - 8px);
         flex: 0 0 calc(66.666% - 8px);
-        max-width: calc(66.666% - 8px);
     }
     .xs-w50 {
+        width: 50%;
+        width: calc(50% - 8px);
+        max-width: calc(50% - 8px);
         -ms-flex: 0 0 calc(50% - 8px);
         flex: 0 0 calc(50% - 8px);
-        max-width: calc(50% - 8px);
     }
     .xs-w33 {
+        width: 33.333%;
+        width: calc(33.333% - 8px);
+        max-width: calc(33.333% - 8px);
         -ms-flex: 0 0 calc(33.333% - 8px);
         flex: 0 0 calc(33.333% - 8px);
-        max-width: calc(33.333% - 8px);
     }
     .xs-w25 {
+        width: 25%;
+        width: calc(25% - 8px);
+        max-width: calc(25% - 8px);
         -ms-flex: 0 0 calc(25% - 8px);
         flex: 0 0 calc(25% - 8px);
-        max-width: calc(25% - 8px);
     }
     .xs-w20 {
+        width: 20%;
+        width: calc(20% - 8px);
+        max-width: calc(20% - 8px);
         -ms-flex: 0 0 calc(20% - 8px);
         flex: 0 0 calc(20% - 8px);
-        max-width: calc(20% - 8px);
     }
     .xs-w16 {
+        width: 16.666%;
+        width: calc(16.666% - 8px);
+        max-width: calc(16.666% - 8px);
         -ms-flex: 0 0 calc(16.666% - 8px);
         flex: 0 0 calc(16.666% - 8px);
-        max-width: calc(16.666% - 8px);
     }
     .xs-w12 {
+        width: 12.5%;
+        width: calc(12.5% - 8px);
+        max-width: calc(12.5% - 8px);
         -ms-flex: 0 0 calc(12.5% - 8px);
         flex: 0 0 calc(12.5% - 8px);
-        max-width: calc(12.5% - 8px);
     }
     .xs-w10 {
+        width: 10%;
+        width: calc(10% - 8px);
+        max-width: calc(10% - 8px);
         -ms-flex: 0 0 calc(10% - 8px);
         flex: 0 0 calc(10% - 8px);
-        max-width: calc(10% - 8px);
     }
     .xs-w8 {
+        width: 8.333%;
+        width: calc(8.333% - 8px);
+        max-width: calc(8.333% - 8px);
         -ms-flex: 0 0 calc(8.333% - 8px);
         flex: 0 0 calc(8.333% - 8px);
-        max-width: calc(8.333% - 8px);
     }
     .sm-visible {
         display: none;
