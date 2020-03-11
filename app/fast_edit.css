@@ -8,7 +8,7 @@
     border-radius: 20px;
     background-color: rgba(231, 231, 231, 0.5);
     z-index: 10;
-    pointer-events: all;
+    pointer-events: all !important;
 }
 .edit-bar.edited {
     background-color: rgba(192, 227, 239, 0.5);
@@ -30,7 +30,7 @@
     float: right;
     display: inline-block;
     overflow: hidden;
-    pointer-events: all;
+    pointer-events: all !important;
 }
 .edit-bar a:hover {
     text-decoration: none;
