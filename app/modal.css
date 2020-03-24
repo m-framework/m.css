@@ -49,6 +49,9 @@ body .to-modal,
     -o-transform: translateX(-50%);
     -moz-transform: translateX(-50%);
     transform: translateX(-50%);
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 80px;
 }
 .modal > .modal-block > .title {
     padding: 0 20px;

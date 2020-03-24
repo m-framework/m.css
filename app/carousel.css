@@ -1,5 +1,6 @@
 .carousel-container .carousel {
     height: 300px;
+    overflow: hidden;
 }
 .carousel-container .carousel > * {
     height: 300px;
@@ -20,11 +21,11 @@
     list-style: none;
     float: none;
     clear: both;
+    display: flex;
 }
 .carousel-container .carousel > * {
     display: inline-block;
     position: relative;
-    margin: 0;
     list-style: none;
     background-size: cover;
     background-position: center center;
@@ -36,7 +37,6 @@
     touch-action: pan-y;
     -ms-touch-action: pan-y;
     user-drag: none;
-    float: left;
 }
 .carousel-container .carousel > * > img
 {
