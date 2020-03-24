@@ -14,67 +14,6 @@
     max-height: 240px;
     overflow-y: auto;
     width: 100%;
-}
-.select-multi-helper .versions a {
-    color: #222;
-    text-decoration: none;
-    margin: 5px 8px;
-    display: table;
-}
-.select-multi-helper .versions a:after {
-    content: "\a";
-    white-space: pre;
-}
-.select-multi-helper select[multiple] {
-    display: none;
-}
-.select-multi-helper div.labels {
-    position: relative;
-    display: block;
-    padding: 5px 0;
-}
-.select-multi-helper div.labels b {
-    display: inline-block;
-    border-radius: 4px;
-    padding: 2px 1px 3px 5px;
-    margin: 0 5px 5px 0;
-    font-weight: 400;
-    color: #666;
-    font-size: 13px;
-    border: solid 1px #ddd;
-    background-color: #f6f6f6;
-}
-.select-multi-helper div.labels b i {
-    display: inline-block;
-    width: 14px;
-    height: 14px;
-    margin: 0 0 0 5px;
-    cursor: pointer;
-    color: #d4d4d4;
-}
-.select-multi-helper div.labels b i:hover {
-    color: #666;
-}
-.select-multi-helper div.labels b i:before {
-    content: "\f00d";
-    font: normal normal normal 14px/1 FontAwesome;
-=======
-.select-multi-helper {
-    position: relative;
-}
-.select-multi-helper input.helper {
-    margin: 4px 0;
-}
-.select-multi-helper .versions {
-    position: absolute;
-    display: block;
-    background-color: rgba(255, 255, 255, 0.9);
-    padding: 0;
-    left: 0;
-    z-index: 9999;
-    max-height: 240px;
-    overflow-y: auto;
-    width: 100%;
     margin-top: 5px;
 }
 .select-multi-helper .versions a {
