@@ -1,9 +1,11 @@
 a[data-m-action="drag_sort"] {
     cursor: move;
 }
-[draggable] * {
+/*
+[draggable] *:not([data-m-field]):not([data-m-action]) {
     pointer-events: none;
 }
+*/
 [draggable] {
     -moz-user-select: none;
     -khtml-user-select: none;

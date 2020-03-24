@@ -38,6 +38,10 @@
     user-drag: none;
     float: left;
 }
+.carousel-container .carousel > * > img
+{
+    pointer-events: none;
+}
 .carousel-container .carousel > * .title {
     background-color: #fff;
     color: #0289c8;
@@ -102,6 +106,63 @@
     width: 100%;
     padding: 3px;
 }
+.carousel-container ul.dots {
+    display: inline-block;
+    width: 100%;
+    padding: 5px;
+    margin: 10px 0 0 0;
+    text-align: center;
+    list-style: none;
+    height: 30px;
+    overflow: hidden;
+}
+.carousel-container ul.dots li {
+    list-style: none;
+    padding: 0;
+    margin: 0 5px;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #333;
+    opacity: 0.3;
+    border-radius: 50%;
+    cursor: pointer;
+    -moz-transition: all .25s ease-in-out;
+    -webkit-transition: all .25s ease-in-out;
+    -o-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
+}
+.carousel-container ul.dots li:hover {
+    opacity: 0.6;
+}
+.carousel-container ul.dots li.active {
+    opacity: 0.8;
+}
+.carousel-container ul.dots.previews {
+    height: 60px;
+}
+.carousel-container ul.dots.previews li {
+    margin: 0 3px;
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    text-align: center;
+    border-radius: 0;
+    background-color: transparent;
+    position: relative;
+}
+.carousel-container ul.dots.previews li img {
+    display: inline-block;
+    max-width: 200%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+
 
 @media (max-width: 480px) {
     .carousel-container .carousel {
@@ -119,5 +180,13 @@
         padding: 5px 0;
         width: 100%;
         margin: 0;
+    }
+    .carousel-container ul.dots.previews {
+        height: 50px;
+    }
+    .carousel-container ul.dots.previews li {
+        margin: 0 3px;
+        width: 50px;
+        height: 50px;
     }
 }

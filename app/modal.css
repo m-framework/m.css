@@ -84,7 +84,7 @@ body .to-modal,
 }
 .modal > .modal-block > .close:before {
     content: '\f00d';
-    text-shadow: 1px 1px 2px #333;
+    text-shadow: none;
 }
 .modal .content {
     padding: 0;
