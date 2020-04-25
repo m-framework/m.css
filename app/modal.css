@@ -58,36 +58,47 @@ body .to-modal,
     background-color: #eee;
     text-align: center;
     color: #555;
-    line-height: 42px;
+    line-height: 50px;
     vertical-align: middle;
     font-size: 1.1em;
-    font-family: 'Open Sans';
     font-weight: 300;
 }
 .modal > .modal-block > .close {
     position: absolute;
     display: none;
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     color: #bbb;
     font-size: 30px;
     text-align: center;
-    vert-align: middle;
+    vertical-align: middle;
     line-height: 50px;
-    font-family: 'FontAwesome';
     right: 0;
     top: 0;
     text-decoration: none;
     z-index: 999;
+    opacity: 0.5;
+    margin: 10px;
+    cursor: pointer;
+}
+.close:before, .close:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 33px;
+    width: 2px;
+    background-color: #333;
+    text-shadow: none;
+}
+.close:before {
+    transform: rotate(45deg);
+}
+.close:after {
+    transform: rotate(-45deg);
 }
 .modal > .modal-block > .close:hover {
     text-decoration: none;
-    color: #376d92;
-    background-color: #fff;
-}
-.modal > .modal-block > .close:before {
-    content: '\f00d';
-    text-shadow: none;
+    opacity: 1;
 }
 .modal .content {
     padding: 0;
