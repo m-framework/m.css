@@ -284,8 +284,7 @@ input[type="date"]
     min-height: 40px;
 }
 input[type=number] {
-    -moz-appearance: textfield;
-    appearance: textfield;
+    -moz-appearance: none;
     margin: 4px;
 }
 input[type=number]::-webkit-inner-spin-button,
@@ -629,7 +628,7 @@ hr {
     text-align: right;
 }
 .text-justify, .txt-j {
-    justify-content: justify;
+    justify-content: space-between;
     text-align: justify;
 }
 .float-left, .flt-l, img[align="left"]
